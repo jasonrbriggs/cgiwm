@@ -1,6 +1,6 @@
 # cgiwm
 
-A simple CGI-based webmention receiver. Stores each notification as a json snippet in a "queue" directory, which can then be processed separately and the resulting webmentions.json file is copied into the target path in the htdocs dir (i.e. the target directory of the webmention notification). Compliant with receiver test #1 and #2 of the webmention [test suite](https://webmention.rocks/).
+An extremely simple CGI-based webmention receiver. Stores each notification as a json snippet in a "queue" directory, which can then be processed separately and the resulting webmentions.json file is copied into the target path in the htdocs dir (i.e. the target directory of the webmention notification). Compliant with receiver test #1 and #2 of the webmention [test suite](https://webmention.rocks/).
 See [https://www.w3.org/TR/webmention/](https://www.w3.org/TR/webmention/) for more information.
 
 Usage:
