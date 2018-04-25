@@ -1,5 +1,5 @@
 
 
 all:
-	nim -d:ssl c cgiwm.nim
+	nim -d:release -d:ssl c cgiwm.nim
 
