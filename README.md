@@ -1,7 +1,6 @@
 # cgiwm
 
-A simple CGI-based webmention receiver. Stores webmentions as a json snippet in a directory, processed separately and the resulting webmentions.json
-file is copied into the target path in the htdocs dir.
+A simple CGI-based webmention receiver. Stores webmentions as a json snippet in a directory, which are then processed separately and the resulting webmentions.json file is copied into the target path in the htdocs dir.
 
 Usage:
 
@@ -25,3 +24,9 @@ RewriteRule /webmention-endpoint /cgi-bin/cgiwm.cgi [NC,PT]
 ```
 
 (obviously, in this example, install the cgiwm executable and associated cgiwm.cgi script in /usr/lib/cgi-bin)
+
+An example crontab entry for converting webmention snippets and producing webmention.json files in the target dir is:
+
+```
+*/5 * * * * cronic /usr/lib/cgi-bin/cgiwm process /tmp/ /var/www/
+```
