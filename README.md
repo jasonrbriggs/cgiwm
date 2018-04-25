@@ -6,7 +6,7 @@ See [https://www.w3.org/TR/webmention/](https://www.w3.org/TR/webmention/) for m
 Usage:
 
 * `cgiwm cgi <queuedir>` to provide a CGI-based webmention end point
-* `cgiwm process <queuedir> <htdocs> [--invoke <cmd>]` to process webmention json snippets in the queuedir, and write the results into the correct place in htdocs (separately invoke a command for each webmention.json file created/updated)
+* `cgiwm process <queuedir> <htdocs> [--invoke <cmd>]` to process webmention json snippets in the queuedir, and write the results into the correct place in htdocs (optionally invoke a command for each webmention.json file created/updated)
 
 
 Example Apache2 configuration for CGI:
