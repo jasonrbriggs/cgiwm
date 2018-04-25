@@ -1,6 +1,8 @@
 # cgiwm
 
-A simple CGI-based webmention receiver. Stores webmentions as a json snippet in a directory, which are then processed separately and the resulting webmentions.json file is copied into the target path in the htdocs dir.
+A simple CGI-based webmention receiver. Stores webmentions as a json snippet in a directory, which are then processed separately and the resulting webmentions.json file is copied into the target path in the htdocs dir. Compliant with receiver test #1 and #2 of the webmention [test suite](https://webmention.rocks/).
+
+See [https://www.w3.org/TR/webmention/](https://www.w3.org/TR/webmention/) for more information.
 
 Usage:
 
@@ -9,7 +11,6 @@ Usage:
 
 
 Example Apache2 configuration for CGI:
-
 ```
 ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 <Directory "/usr/lib/cgi-bin">
